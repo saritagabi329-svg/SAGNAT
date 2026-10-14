@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7c3aed">
+  <title>SAGNAT | Tecnología y cuidado animal</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>🐾 SAGNAT</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#funcionamiento">Funcionamiento</a>
+      <a href="#cuidados">Cuidados</a>
+      <a href="#tips">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h2>¡Tecnología con amor por los animales! 💜</h2>
+      <p>
+        SAGNAT es un proyecto educativo que explica cómo
+        funciona un dispensador de comida para mascotas
+        elaborado con Arduino.
+      </p>
+      <a class="boton" href="#funcionamiento">
+        Descubrir el proyecto ✨
+      </a>
+    </section>
+
+    <section id="funcionamiento" class="seccion">
+      <h2>🤖 ¿Cómo funciona el dispensador?</h2>
+      <p>
+        Arduino ejecuta instrucciones que pueden controlar
+        un servomotor encargado de abrir y cerrar una compuerta
+        para permitir la salida del alimento.
+      </p>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>1. Control</h3>
+          <p>Arduino ejecuta el programa del dispensador.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>2. Movimiento</h3>
+          <p>El servomotor mueve la compuerta.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>3. Alimentación</h3>
+          <p>El alimento cae al recipiente de la mascota.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cuidados" class="seccion cuidados">
+      <h2>🐶 Cuidado de los animales</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>🥗 Alimentación</h3>
+          <p>Ofrece alimento adecuado para su edad y necesidades.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>💧 Hidratación</h3>
+          <p>Mantén agua limpia y fresca disponible.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>🩺 Salud</h3>
+          <p>Realiza controles veterinarios periódicos.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>💗 Cariño</h3>
+          <p>Dedica tiempo al juego, la compañía y el ejercicio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips" class="seccion">
+      <h2>✨ Tips para cuidar tu mascota</h2>
+      <ul class="lista-tips">
+        <li>Limpia regularmente el recipiente de comida.</li>
+        <li>Comprueba que el dispensador funcione correctamente.</li>
+        <li>Verifica la cantidad de alimento que entrega.</li>
+        <li>Mantén los cables lejos del agua y de los animales.</li>
+        <li>No sustituyas la supervisión humana por el dispensador.</li>
+      </ul>
+    </section>
+
+    <section class="seccion simulador">
+      <h2>🍽️ Simulador del dispensador</h2>
+      <p id="estado">El dispensador está en espera.</p>
+      <div class="plato" id="plato">🥣</div>
+      <button class="boton" id="dispensar">
+        Dispensar alimento
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>💜 SAGNAT | Tecnología, responsabilidad y amor animal 🐾</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
